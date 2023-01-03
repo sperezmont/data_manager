@@ -1,5 +1,5 @@
 name = "data_manager_env"
-uuid = "6b7156fa-32c4-46ad-931b-635ba46ae76b"
+uuid = "e40c237f-44ca-42c1-ae2e-d3f29eb4edbb"
 authors = ["sperezmont <sergio.perez.mont@gmail.com>"]
 version = "0.1.0"
 
