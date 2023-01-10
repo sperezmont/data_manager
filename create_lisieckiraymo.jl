@@ -1,5 +1,5 @@
 """
-    Aim: This script aims to create waelbroeck-etal_2002.nc from txt data               \n
+    Aim: This script aims to create lisiecki-raymo_2005_LR04stack.nc from txt data      \n
     Author: Sergio Pérez Montero (github.com/sperezmont)                                \n
     Date: 2023.01.10                                                                    \n
 """
@@ -10,14 +10,11 @@ using NCDatasets        # to make outputs and manage inputs (?)
 using CSV, DataFrames
 
 # Variables
-in_file = "/home/sergio/entra/ice_data/Reconstructions/Waelbroeck-etal_2002/waelbroeck-etal_2002_raw-data.txt"
-out_file = "/home/sergio/entra/ice_data/Reconstructions/Waelbroeck-etal_2002/waelbroeck-etal_2002.nc"
-long_names = ["Calendar age, cal. ky", "Mean ocean d18O, per mil SMOW", "Minimum mean ocean d18O, per mil SMOW", "Maximum mean ocean d18O, per mil SMOW",
-               "Global mean sea level, m below present sea level", "Minimum global mean sea level, m below present sea level", "Maximum global mean sea level, m below present sea level",
-               "Alternate age model, 14C + SPECMAP, no Termination II Adjustment", "Alternate age model, adjusted to Martinson et al. (1987) time scale, prior to 33 ky BP only", "Alternate age model, adjusted to Martinson et al. (1987) time scale all the way"
-               ]
-units = ["ka", "o/oo", "o/oo", "o/oo", "m", "m", "m", "ka", "ka", "ka"]
-factor2multiply = [-1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+in_file = "/home/sergio/entra/ice_data/Reconstructions/Lisiecki-Raymo_2005/LR04stack_spm.txt"
+out_file = "/home/sergio/entra/ice_data/Reconstructions/Lisiecki-Raymo_2005/lisiecki-raymo_2005_LR04stack.nc"
+long_names = ["Time (ka)", "Benthic d18O (per mil)", "Standard error (per mil)"]
+units = ["ka", "per mil", "per mil"]
+factor2multiply = [-1, 1, 1]
 metadata_text = ""
 
 # Read original file
