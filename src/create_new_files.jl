@@ -38,8 +38,8 @@ function tab2nc(infile, outfile, hdr, new_variables, var_units)
 end
 
 
-(isfile("out.nc")) && (rm("out.nc"))
-vars = ["Depth", "Age", "M. barleeanus MgCa", "BWT, bar L", "BWT, bar H", "M. affinis MgCa", "M. affinis MgCa corr", "BWT, af L", "BWT, af H"]
-vars_units = ["m", "ka BP", "mmol/mol", "ºC", "ºC", "mmol/mol", "mmol/mol", "ºC", "ºC"]
-path2data = "/home/sergio/entra/ice_data/Reconstructions/Repschlaeger-etal_2015/datasets/test_file.tab"
-tab2nc(path2data, "out.nc", 22, vars, vars_units)
+# (isfile("out.nc")) && (rm("out.nc"))
+# vars = ["Depth", "Age", "M. barleeanus MgCa", "BWT, bar L", "BWT, bar H", "M. affinis MgCa", "M. affinis MgCa corr", "BWT, af L", "BWT, af H"]
+# vars_units = ["m", "ka BP", "mmol/mol", "ºC", "ºC", "mmol/mol", "mmol/mol", "ºC", "ºC"]
+# path2data = "/home/sergio/entra/ice_data/Reconstructions/Repschlaeger-etal_2015/datasets/test_file.tab"
+# tab2nc(path2data, "out.nc", 22, vars, vars_units)
