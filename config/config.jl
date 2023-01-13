@@ -18,7 +18,7 @@ Pkg.activate(env_name)
 
 # Adding dependencies ... 
 display("** Adding dependencies ... **")
-packages = ["NCDatasets", "CSV", "DataFrames"]
+packages = ["NCDatasets", "CSV", "DataFrames", "CairoMakie", "DSP", "Statistics", "Wavelets", "ContinuousWavelets", "Interpolations"]
 for i in packages
     Pkg.add(i)
 end
